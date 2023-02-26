@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "aiUSfJjtmVbaFhWjjMUF7zfscB8Q4bLvF9HT3Kyqyfz/P794K8tD2zHv2/7RqOsXojyb8R6mJilLt4ChM7hyog==",
+  "success": true,
+  "projectFilePath": "/home/batman/Projects/ToDo/Reactivities/API/API.csproj",
+  "expectedPackageFiles": [
+    "/home/batman/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/batman/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/batman/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/batman/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/batman/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/batman/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
