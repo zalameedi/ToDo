@@ -1,0 +1,12 @@
+/home/batman/Projects/ToDo/Reactivities/Domain/bin/Debug/net6.0/Domain.deps.json
+/home/batman/Projects/ToDo/Reactivities/Domain/bin/Debug/net6.0/Domain.dll
+/home/batman/Projects/ToDo/Reactivities/Domain/bin/Debug/net6.0/ref/Domain.dll
+/home/batman/Projects/ToDo/Reactivities/Domain/bin/Debug/net6.0/Domain.pdb
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.dll
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/ref/Domain.dll
+/home/batman/Projects/ToDo/Reactivities/Domain/obj/Debug/net6.0/Domain.pdb

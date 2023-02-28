@@ -1,0 +1,15 @@
+/home/batman/Projects/ToDo/Reactivities/Persistence/bin/Debug/net6.0/Persistence.deps.json
+/home/batman/Projects/ToDo/Reactivities/Persistence/bin/Debug/net6.0/Persistence.dll
+/home/batman/Projects/ToDo/Reactivities/Persistence/bin/Debug/net6.0/ref/Persistence.dll
+/home/batman/Projects/ToDo/Reactivities/Persistence/bin/Debug/net6.0/Persistence.pdb
+/home/batman/Projects/ToDo/Reactivities/Persistence/bin/Debug/net6.0/Domain.dll
+/home/batman/Projects/ToDo/Reactivities/Persistence/bin/Debug/net6.0/Domain.pdb
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.csproj.AssemblyReference.cache
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.AssemblyInfoInputs.cache
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.AssemblyInfo.cs
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.csproj.CoreCompileInputs.cache
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.csproj.CopyComplete
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.dll
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/ref/Persistence.dll
+/home/batman/Projects/ToDo/Reactivities/Persistence/obj/Debug/net6.0/Persistence.pdb
