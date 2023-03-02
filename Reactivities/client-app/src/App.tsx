@@ -1,29 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import { ducks } from './demo';
-// import DuckItem from './DuckItem';
+import axios from 'axios';
+import { Button, Header, List } from 'semantic-ui-react';
+
 
 function App() {
+  const [todotasks, setToDoTasks] = useState([]);
+  useEffect(() => { //what to do when app loads up (react hook)
+    axios.get('http://localhost:5001/api/tasks').then(response => {
+      console.log(response); //debugging purposes
+      setToDoTasks(response.data)
+    })
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* {ducks.map(duck => (
-          <DuckItem duck={duck}/>
-        ))} */}
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header as='h2' icon='tasks' content='ToDoTasks' />
+        <List>
+          {todotasks.map((todotask: any) => (
+            <List.Item key={todotask.id}>
+              {todotask.title}
+            </List.Item>
+          ))}
+        </List>
+        <Button>Create New Task</Button>
     </div>
   );
 }
