@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/A1sFQs5H62knDqSMijksuDmKeo+zayIMeofMZzzbsf0jK/5i0l92IYBjTNo6iNmi9cHSCOiqqEND2bczdmG1g==",
+  "dgSpecHash": "5eNqQ++IOG2uTkThXnEipqOvHPjo8UYKL/mIZjoHV+sz1Bu7Rq6Wqcc2ZJYwPAqzcl6heevOSgS9+ZXZXi89CQ==",
   "success": true,
   "projectFilePath": "/home/batman/Projects/ToDo/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
     "/home/batman/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/batman/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/home/batman/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/home/batman/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.data.sqlite.core/6.0.13/microsoft.data.sqlite.core.6.0.13.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.entityframeworkcore/6.0.14/microsoft.entityframeworkcore.6.0.14.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.14/microsoft.entityframeworkcore.abstractions.6.0.14.nupkg.sha512",
@@ -18,7 +21,7 @@
     "/home/batman/.nuget/packages/microsoft.extensions.caching.memory/6.0.1/microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.1/microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
-    "/home/batman/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/batman/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.extensions.dependencymodel/6.0.0/microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "/home/batman/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",

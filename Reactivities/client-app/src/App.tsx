@@ -8,7 +8,7 @@ import { Button, Header, List } from 'semantic-ui-react';
 function App() {
   const [todotasks, setToDoTasks] = useState([]);
   useEffect(() => { //what to do when app loads up (react hook)
-    axios.get('http://localhost:5001/api/tasks').then(response => {
+    axios.get('http://localhost:5001/api/todotasks').then(response => {
       console.log(response); //debugging purposes
       setToDoTasks(response.data)
     })

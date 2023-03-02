@@ -66,3 +66,7 @@
 /home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/MediatR.dll
+/home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/MediatR.Contracts.dll
+/home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
