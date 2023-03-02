@@ -70,3 +70,5 @@
 /home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/MediatR.Contracts.dll
 /home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/AutoMapper.dll
+/home/batman/Projects/ToDo/Reactivities/API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

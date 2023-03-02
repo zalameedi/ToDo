@@ -1,3 +1,4 @@
+using Application.Core;
 using Application.ToDoTasks;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +24,7 @@ builder.Services.AddCors(opt =>
 });
 
 builder.Services.AddMediatR(typeof(List.Handler)); //my handlers are in application
-
+builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
