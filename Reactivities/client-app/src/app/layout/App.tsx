@@ -6,15 +6,23 @@ import { ToDoTask } from './models/todotask';
 import NavBar from './NavBar';
 import ToDoTaskDashboard from '../../features/todotasks/dashboard/ToDoTaskDashBoard';
 import {v4 as uuid} from 'uuid';
+import agent from '../api/agent';
 
 function App() {
   const [todotasks, setToDoTasks] = useState<ToDoTask[]>([]);
   const [editMode, setEditMode] = useState(false);
   
   useEffect(() => { //what to do when app loads up (react hook)
-    axios.get<ToDoTask[]>('http://localhost:5001/api/todotasks').then(response => {
+    //axios.get<ToDoTask[]>('http://localhost:5001/api/todotasks').then(response => {
+      agent.ToDoTasks.list().then(response => {
       console.log(response); //debugging purposes
-      setToDoTasks(response.data)
+
+      let todotasks: ToDoTask[] = []; //my middleware approach
+      response.forEach(todotask => {
+        todotask.date = todotask.date.split('T')[0]
+        todotasks.push(todotask)
+      })
+      setToDoTasks(todotasks)
     })
   }, [])
 
@@ -31,13 +39,20 @@ function App() {
   function handleCreateActivity(todotask: ToDoTask)
   {
     //todotask.id ? setToDoTasks([]) NOTE: TODO: ADD EDIT
-    setToDoTasks([...todotasks, {...todotask, id: uuid()}]);
-    setEditMode(false);
+    todotask.id = uuid();
+    agent.ToDoTasks.create(todotask).then(() => 
+    {
+      setToDoTasks([...todotasks, todotask]);
+      setEditMode(false);
+    })
   }
 
   function handleDeleteToDoTask(id: string)
   {
-    setToDoTasks([...todotasks.filter(x => x.id != id)]);
+    agent.ToDoTasks.delete(id).then(() => 
+    {
+      setToDoTasks([...todotasks.filter(x => x.id != id)]);
+    })
   }
 
   return (

@@ -34,7 +34,7 @@ export default function ToDoTaskForm({todotask: selectedToDoTask, closeForm, cre
             <Form onSubmit={handleSubmit} autocomplete='off'>
                 <Form.Input label="Title" placeHolder='Title' value={todotask.title} name='title' onChange={handleInputChange} />
                 <Form.Input label="Description" placeHolder='Description' value={todotask.description} name='description' onChange={handleInputChange} />
-                <Form.Input label="Date" placeHolder="Date" value={todotask.date} name='date' onChange={handleInputChange} />
+                <Form.Input type='date' label="Date" placeHolder="Date" value={todotask.date} name='date' onChange={handleInputChange} />
                 <Button floated='right' label='Submit' positive type='submit' context='Submit'/>
             </Form>
         </Segment>
