@@ -5,7 +5,7 @@ import { Button, Container, Header, List } from 'semantic-ui-react';
 import { ToDoTask } from './models/todotask';
 import NavBar from './NavBar';
 import ToDoTaskDashboard from '../../features/todotasks/dashboard/ToDoTaskDashBoard';
-
+import {v4 as uuid} from 'uuid';
 
 function App() {
   const [todotasks, setToDoTasks] = useState<ToDoTask[]>([]);
@@ -28,6 +28,18 @@ function App() {
     setEditMode(false);
   }
 
+  function handleCreateActivity(todotask: ToDoTask)
+  {
+    //todotask.id ? setToDoTasks([]) NOTE: TODO: ADD EDIT
+    setToDoTasks([...todotasks, {...todotask, id: uuid()}]);
+    setEditMode(false);
+  }
+
+  function handleDeleteToDoTask(id: string)
+  {
+    setToDoTasks([...todotasks.filter(x => x.id != id)]);
+  }
+
   return (
     <div className="App">
       <NavBar openForm={handleFormOpen}/>
@@ -37,6 +49,8 @@ function App() {
         editMode={editMode}
         openForm={handleFormOpen}
         closeForm={handleFormClose}
+        create={handleCreateActivity}
+        deleteToDoTask={handleDeleteToDoTask}
         />
       </Container>
     </div>

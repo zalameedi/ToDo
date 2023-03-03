@@ -9,18 +9,22 @@ interface Props{
     editMode: boolean;
     openForm: (id: string) => void;
     closeForm: () => void;
+    create: (todotask: ToDoTask) => void;
+    deleteToDoTask: (id: string) => void
   }  
 
-export default function ToDoTaskDashboard({todotasks, editMode, openForm, closeForm}: Props)
+export default function ToDoTaskDashboard({todotasks, editMode, openForm, closeForm, create, deleteToDoTask}: Props)
 {
     return(
     <Grid>
         <Grid.Column width='10'>
             <ToDoTaskList 
-            todotasks={todotasks}/>
+            todotasks={todotasks}
+            deleteToDoTask={deleteToDoTask}
+            />
         </Grid.Column>
         {editMode &&
-        <ToDoTaskForm closeForm={closeForm} todotask={undefined} />}
+        <ToDoTaskForm closeForm={closeForm} todotask={undefined} create={create} />}
     </Grid>
     )
 }

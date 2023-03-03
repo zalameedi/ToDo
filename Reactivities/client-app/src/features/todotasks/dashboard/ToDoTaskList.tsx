@@ -4,9 +4,10 @@ import { ToDoTask } from "../../../app/layout/models/todotask";
 
 interface Props {
     todotasks: ToDoTask[];
+    deleteToDoTask: (id: string) => void;
 }
 
-export default function ToDoTaskList({todotasks}: Props)
+export default function ToDoTaskList({todotasks, deleteToDoTask}: Props)
 {
     return(
         <Segment>
@@ -18,7 +19,7 @@ export default function ToDoTaskList({todotasks}: Props)
                             <Item.Meta>{todotask.date}</Item.Meta>
                             <Item.Description>{todotask.description}</Item.Description>
                             <Item.Extra>
-                                <Button floated='right' content='Complete' color='red' />
+                                <Button onClick={() => deleteToDoTask(todotask.id)} floated='right' content='Complete' color='red' />
                             </Item.Extra>
                         </Item.Content>
                     </Item>

@@ -3,5 +3,5 @@ export interface ToDoTask {
     title: string;
     date: string;
     description: string;
-    completed: boolean;
+    //completed: boolean;
 }
