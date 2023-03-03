@@ -6,16 +6,21 @@ import ToDoTaskList from "./ToDoTaskList";
 
 interface Props{
     todotasks: ToDoTask[];
+    editMode: boolean;
+    openForm: (id: string) => void;
+    closeForm: () => void;
   }  
 
-export default function ToDoTaskDashboard({todotasks}: Props)
+export default function ToDoTaskDashboard({todotasks, editMode, openForm, closeForm}: Props)
 {
     return(
     <Grid>
         <Grid.Column width='10'>
-            <ToDoTaskList todotasks={todotasks}/>
+            <ToDoTaskList 
+            todotasks={todotasks}/>
         </Grid.Column>
-        <ToDoTaskForm/>
+        {editMode &&
+        <ToDoTaskForm closeForm={closeForm} todotask={undefined} />}
     </Grid>
     )
 }

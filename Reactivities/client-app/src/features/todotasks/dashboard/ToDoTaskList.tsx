@@ -18,7 +18,6 @@ export default function ToDoTaskList({todotasks}: Props)
                             <Item.Meta>{todotask.date}</Item.Meta>
                             <Item.Description>{todotask.description}</Item.Description>
                             <Item.Extra>
-                                <Button floated='right' content='Edit' color='blue' />
                                 <Button floated='right' content='Complete' color='red' />
                             </Item.Extra>
                         </Item.Content>

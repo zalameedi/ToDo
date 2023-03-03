@@ -1,16 +1,21 @@
 import React from 'react';
 import { Button, Form, FormInput, Segment } from 'semantic-ui-react';
+import { ToDoTask } from '../../../app/layout/models/todotask';
 
-export default function ToDoTaskForm()
+interface Props{
+    todotask: ToDoTask | undefined;
+    closeForm: () => void;
+}
+
+export default function ToDoTaskForm({todotask, closeForm}: Props)
 {
     return(
         <Segment clearing>
             <Form>
-                <Form.Input placeHolder='Title' />
-                <Form.Input placeHolder='Description' />
-                <Form.Input placeHolder='Date' />
-                <Button floated='right' positive type='submit' context='Submit'/>
-                <Button floated='right' type='button' context='Cancel'/>
+                <Form.Input label="Title" placeHolder='Title' />
+                <Form.Input label="Description" placeHolder='Description' />
+                <Form.Input label="Date" placeHolder="Date" />
+                <Button floated='right' label='Submit' positive type='submit' context='Submit'/>
             </Form>
         </Segment>
     )

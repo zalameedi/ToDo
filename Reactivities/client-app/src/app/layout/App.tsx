@@ -9,6 +9,8 @@ import ToDoTaskDashboard from '../../features/todotasks/dashboard/ToDoTaskDashBo
 
 function App() {
   const [todotasks, setToDoTasks] = useState<ToDoTask[]>([]);
+  const [editMode, setEditMode] = useState(false);
+  
   useEffect(() => { //what to do when app loads up (react hook)
     axios.get<ToDoTask[]>('http://localhost:5001/api/todotasks').then(response => {
       console.log(response); //debugging purposes
@@ -16,12 +18,26 @@ function App() {
     })
   }, [])
 
+  function handleFormOpen(id?: string)
+  {
+    setEditMode(true);
+  }
+
+  function handleFormClose()
+  {
+    setEditMode(false);
+  }
 
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar openForm={handleFormOpen}/>
       <Container style={{marginTop: '7em'}}>
-        <ToDoTaskDashboard todotasks={todotasks} />
+        <ToDoTaskDashboard 
+        todotasks={todotasks} 
+        editMode={editMode}
+        openForm={handleFormOpen}
+        closeForm={handleFormClose}
+        />
       </Container>
     </div>
   );
